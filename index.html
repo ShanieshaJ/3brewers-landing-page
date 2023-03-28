@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3 Brewers (Les 3 Brasseurs)</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo&family=Barlow&family=Barlow+Condensed&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        --darkgreen: #006400;
+        --maplered: #d02d23;
+        --bluegrey: #424952;
+        --maplebeige: #fad0a1;
+      }
+
+      * {
+        font-family: "Archivo", sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        outline: none;
+        border: none;
+        text-transform: capitalize;
+        transition: all 0.3s linear;
+      }
+
+      *::selection {
+        background: var(--darkgreen);
+        color: #fff;
+      }
+
+      html {
+        font-size: 62.5%;
+        overflow-x: hidden;
+      }
+
+      body {
+        overflow-x: hidden;
+        /*height: 200rem;*/
+      }
+
+      html::-webkit-scrollbar {
+        width: 1.4rem;
+      }
+
+      html::-webkit-scrollbar-track {
+        background: var(--bluegrey);
+      }
+
+      html::-webkit-scrollbar-thumb {
+        background: var(--darkgreen);
+      }
+
+      header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        width: 100%;
+        background: #fff;
+        padding: 1.5rem 10%;
+        box-shadow: 0 0.3rem 2rem rgba(0, 0, 0, 0.1);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      header .logo img {
+        height: 7rem;
+      }
+
+      header .navbar ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+      }
+
+      header .navbar ul li {
+        margin-left: 3rem;
+      }
+
+      header .navbar ul li a {
+        font-size: 2rem;
+        color: var(--bluegrey);
+      }
+
+      header .navbar ul li a:hover,
+      header .navbar ul li a.active {
+        color: var(--darkgreen);
+      }
+
+      header #menu-bar {
+        font-size: 3rem;
+        color: var(--bluegrey);
+        cursor: pointer;
+        /*display: none;*/
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo"><img src="logo.jpeg" alt="logo" /></a>
+
+      <section id="menu-bar" class="fa-solid fa-beer-mug-empty"></section>
+
+      <nav class="navbar">
+        <ul>
+          <li>
+            <a href="#home" class="active">home</a>
+          </li>
+          <li>
+            <a href="#about">about</a>
+          </li>
+          <li>
+            <a href="#menu">menu</a>
+          </li>
+          <li>
+            <a href="#popular">popular</a>
+          </li>
+          <li>
+            <a href="#gallery">gallery</a>
+          </li>
+          <li>
+            <a href="#contact">contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+    integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+</html>
