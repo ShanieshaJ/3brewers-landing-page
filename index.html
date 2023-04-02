@@ -159,6 +159,14 @@
           border-color: var(--bluegrey);
         }
       }
+      .fa-solid {
+        transform: rotate(180deg);
+      }
+
+      header .navbar .nav-toggle {
+        transform: scaleY(1);
+        opacity: 1;
+      }
     </style>
   </head>
   <body>
@@ -197,4 +205,13 @@
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
   ></script>
+
+  <script>
+    $(document).ready(function () {
+      "#menu-bar".on("click", function () {
+        $(this).toggleClass("fa-solid");
+        $(".navbar").toggleClass("nav-toggle");
+      });
+    });
+  </script>
 </html>
