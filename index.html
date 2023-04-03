@@ -37,7 +37,7 @@
         outline: none;
         border: none;
         text-transform: capitalize;
-        transition: all 0.3s linear;
+        transition: all 0.2s linear;
       }
 
       *::selection {
@@ -120,7 +120,7 @@
         }
 
         header #menu-bar {
-          display: block;
+          display: initial;
         }
 
         header .navbar {
@@ -155,15 +155,15 @@
 
         header .navbar ul li a:hover,
         header .navbar ul li a.active {
-          color: var(--bluegrey);
-          border-color: var(--bluegrey);
+          color: #333;
+          border-color: #333;
         }
       }
-      .fa-solid {
+      .fa-times {
         transform: rotate(180deg);
       }
 
-      header .navbar .nav-toggle {
+      header .navbar .active {
         transform: scaleY(1);
         opacity: 1;
       }
@@ -199,19 +199,14 @@
       </nav>
     </header>
   </body>
-  <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
-    integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  ></script>
 
   <script>
-    $(document).ready(function () {
-      "#menu-bar".on("click", function () {
-        $(this).toggleClass("fa-solid");
-        $(".navbar").toggleClass("nav-toggle");
-      });
+    let menuBar = document.querySelector("#menu-bar");
+    let menu = document.querySelector(".navbar");
+
+    menuBar.addEventListener("click", () => {
+      menuBar.classList.toggle("fa-times");
+      menu.classList.toggle("active");
     });
   </script>
 </html>
