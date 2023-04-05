@@ -26,6 +26,10 @@
         --maplered: #d02d23;
         --bluegrey: #424952;
         --maplebeige: #fad0a1;
+        --border: 0.2rem solid var(--bluegrey);
+        --border-radius: 95% 4% 97% 5% /4% 94% 3% 95%;
+        --border-radius-hover: 4% 95% 6% 95% /95% 4% 92% 5%;
+        --border-hover: 0.2rem dashed var(--bluegrey);
       }
 
       * {
@@ -48,6 +52,8 @@
       html {
         font-size: 62.5%;
         overflow-x: hidden;
+        scroll-padding-top: 8rem;
+        scroll-behavior: smooth;
       }
 
       body {
@@ -70,12 +76,13 @@
       header {
         position: fixed;
         top: 0;
+        right: 0;
         left: 0;
         z-index: 1000;
         width: 100%;
         background: #fff;
-        padding: 1.5rem 10%;
-        box-shadow: 0 0.3rem 2rem rgba(0, 0, 0, 0.1);
+        padding: 2rem 9%;
+        box-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.1);
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -99,6 +106,23 @@
       header .navbar ul li a {
         font-size: 2rem;
         color: var(--bluegrey);
+      }
+
+      .btn {
+        display: inline-block;
+        text-decoration: none;
+        padding: 0.9rem 1.5rem;
+        border-radius: var(--border-radius);
+        background: none;
+        border: var(--border);
+        cursor: pointer;
+        margin-top: 1rem;
+        font-size: 1.7rem;
+      }
+
+      .btn:hover {
+        border-radius: var(--border-radius-hover);
+        border: var(--border-hover);
       }
 
       header .navbar ul li a:hover,
@@ -197,6 +221,8 @@
           </li>
         </ul>
       </nav>
+
+      <a href="#" class="btn">Reserve a table</a>
     </header>
   </body>
 
