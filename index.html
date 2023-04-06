@@ -171,6 +171,7 @@
     </style>
   </head>
   <body>
+    <!-- Navbar header section -->
     <header>
       <section id="menu-btn" class="fa-solid fa-beer-mug-empty"></section>
 
@@ -186,6 +187,8 @@
       </nav>
       <a href="#" class="btn">Reserve a table</a>
     </header>
+
+    <!-- Home section -->
   </body>
 
   <script>
@@ -195,6 +198,11 @@
     menuBtn.onclick = () => {
       menuBtn.classList.toggle("fa-times");
       navbar.classList.toggle("active");
+    };
+
+    window.onscroll = () => {
+      menuBtn.classList.remove("fa-times");
+      navbar.classList.remove("active");
     };
   </script>
 </html>
