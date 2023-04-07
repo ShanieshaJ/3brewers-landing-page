@@ -56,6 +56,45 @@
         scroll-behavior: smooth;
       }
 
+      section {
+        min-height: 100vh;
+        padding: 1rem 10%;
+        padding-top: 13rem;
+      }
+
+      .home {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        position: relative;
+        z-index: 0;
+        overflow: hidden;
+      }
+
+      .home .image {
+        flex: 1 1 40rem;
+      }
+
+      .home .image img {
+        width: 100%;
+      }
+
+      .home .content {
+        flex: 1 1 40rem;
+      }
+
+      .home .content h3 {
+        color: var(--bluegrey);
+        font-size: 6rem;
+      }
+
+      .home .content p {
+        color: var(--bluegrey);
+        font-size: 1.7rem;
+        padding: 1rem 0;
+      }
+
       header {
         position: fixed;
         top: 0;
@@ -189,6 +228,22 @@
     </header>
 
     <!-- Home section -->
+    <section id="home" class="home">
+      <div class="content">
+        <h3>Welcome to Les 3 Brasseurs</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <a href="#" class="btn">Great Beers</a>
+      <a href="#" class="btn">Great Food</a>
+
+      <div class="image">
+        <img
+          src="stpatrickbeer.png"
+          class="main-home-image"
+          alt="Limited time drink"
+        />
+      </div>
+    </section>
   </body>
 
   <script>
