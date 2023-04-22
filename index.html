@@ -45,7 +45,7 @@
       }
 
       *::selection {
-        background: var(--darkgreen);
+        background: var(--maplebeige);
         color: #fff;
       }
 
@@ -56,27 +56,14 @@
         scroll-behavior: smooth;
       }
 
+      /* Home section */
       section {
-        min-height: 100vh;
-        padding: 1rem 10%;
-        padding-top: 13rem;
+        padding: 2rem 9%;
       }
 
       .home {
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 1.5rem;
-      }
-
-      .home .image {
-        flex: 1 1 40rem;
-        padding-top: 5rem;
-        text-align: center;
-      }
-
-      .home .image img {
-        width: 70%;
+        min-height: 100vh;
+        padding-top: 12rem;
       }
 
       .home .content {
@@ -139,7 +126,7 @@
       }
 
       header .navbar a:hover {
-        color: var(--darkgreen);
+        color: var(--maplebeige);
       }
 
       header .btn {
@@ -162,6 +149,10 @@
         header {
           padding: 2rem;
         }
+
+        section {
+          padding: 2rem;
+        }
       }
 
       @media screen and (max-width: 768px) {
@@ -178,7 +169,7 @@
           top: 99%;
           left: 0;
           right: 0;
-          background: var(--darkgreen);
+          background: var(--maplebeige);
           clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
         }
 
@@ -231,17 +222,17 @@
       <div class="row">
         <div class="content">
           <h3>Welcome to Les 3 Brasseurs</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <a href="#" class="btn">Great Beers</a>
+          <a href="#" class="btn">Great Food</a>
         </div>
-        <a href="#" class="btn">Great Beers</a>
-        <a href="#" class="btn">Great Food</a>
-      </div>
-      <div class="image">
-        <img
-          src="stpatrickbeer.png"
-          class="main-home-image"
-          alt="Limited time drink"
-        />
+
+        <div class="image">
+          <img
+            src="bbrassquetairebeer.png"
+            class="main-home-img"
+            alt="home-img"
+          />
+        </div>
       </div>
     </section>
   </body>
