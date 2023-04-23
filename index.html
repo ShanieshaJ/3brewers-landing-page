@@ -66,19 +66,30 @@
         padding-top: 12rem;
       }
 
-      .home .content {
+      .home .row {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+      }
+
+      .home .row .content {
         flex: 1 1 42rem;
+      }
+
+      .home .row .image {
+        flex: 1 1 42rem;
+        padding-top: 10rem;
+        text-align: center;
+      }
+
+      .home .row .image img {
+        height: 45rem;
       }
 
       .home .content h3 {
         color: var(--bluegrey);
         font-size: 6rem;
-      }
-
-      .home .content p {
-        color: var(--bluegrey);
-        font-size: 1.7rem;
-        padding: 1rem 0;
       }
 
       header {
@@ -125,7 +136,8 @@
         border: var(--border-hover);
       }
 
-      header .navbar a:hover {
+      header .navbar a:hover,
+      header .navbar a.active {
         color: var(--maplebeige);
       }
 
@@ -207,7 +219,7 @@
       <a href="#" class="logo"><img src="logo.jpeg" alt="logo" /></a>
 
       <nav class="navbar">
-        <a href="#home">home</a>
+        <a href="#home" class="active">home</a>
         <a href="#about">about</a>
         <a href="#menu">menu</a>
         <a href="#popular">popular</a>
