@@ -88,11 +88,22 @@
 
       .home .row .image img {
         height: 45rem;
+        animation: float 3s linear infinite;
+      }
+
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-7rem);
+        }
       }
 
       .home .content h3 {
         color: #fff;
-        font-size: 6rem;
+        font-size: 6.5rem;
       }
 
       .home .content span {
@@ -101,6 +112,19 @@
         padding: 0.5rem 1.5rem;
       }
 
+      .home .image-slider {
+        text-align: center;
+        padding-top: 3rem;
+      }
+
+      .home .image-slider img {
+        height: 15rem;
+        margin: 0 0.5rem;
+        cursor: pointer;
+        margin-top: 5rem;
+      }
+
+      /* Navbar header section */
       header {
         position: fixed;
         top: 0;
@@ -242,7 +266,7 @@
       <div class="row">
         <div class="content">
           <h3>Brewing Good Times</h3>
-          <span class="wordText">Microbrasserie</span>
+          <span class="wordText">Microbrewery</span>
           <span class="wordText">Restaurant</span>
           <span class="wordText">Bar</span>
         </div>
@@ -254,6 +278,8 @@
             alt="home-img"
           />
         </div>
+
+        <div class="image-slider"></div>
       </div>
     </section>
   </body>
