@@ -129,6 +129,27 @@
         transform: translateY(-2rem);
       }
 
+      /* About section */
+      .heading {
+        font-size: 9rem;
+        text-align: center;
+        color: transparent;
+        -webkit-text-stroke: 0.05rem var(--maplebeige);
+        letter-spacing: 0.2rem;
+        pointer-events: none;
+        position: relative;
+      }
+
+      .heading span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        color: var(--bluegrey);
+        font-size: 3rem;
+      }
+
       /* Navbar header section */
       header {
         position: fixed;
@@ -308,6 +329,19 @@
           />
         </div>
       </div>
+    </section>
+    <!-- About section -->
+    <section id="about" class="about">
+      <h1 class="heading">
+        About us
+        <span> Our Story</span>
+      </h1>
+
+      <div class="row">
+        <div class="image">
+          <img src="about.jpg" alt="about-img" />
+        </div>
+
     </section>
   </body>
 
