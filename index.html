@@ -220,6 +220,53 @@
         padding-top: 1rem;
       }
 
+      /* Menu section */
+      .menu {
+        background-color: whitesmoke;
+        background-position: center;
+        background-size: cover;
+      }
+
+      .menu .box-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+      }
+
+      .menu .box-container .box {
+        display: flex;
+        flex: 1 1 42rem;
+        padding: 2rem;
+        align-items: center;
+        gap: 1.5rem;
+        border: var(--border);
+        border-radius: var(--border-radius);
+        margin-left: 6rem;
+      }
+
+      .menu .box-container .box:hover {
+        border: var(--border-hover);
+        border-radius: var(--border-radius-hover);
+      }
+
+      .menu .box-container .box img {
+        height: 10rem;
+        margin-left: -6rem;
+      }
+
+      .menu .box-container .box .content h3 {
+        font-size: 2.2rem;
+        color: var(--bluegrey);
+        line-height: 1.8;
+      }
+
+      .menu .box-container .box .content span {
+        font-size: 1.5rem;
+        color: var(--bluegrey);
+        padding-top: 1rem;
+      }
+
       /* Navbar header section */
       header {
         position: fixed;
@@ -503,7 +550,7 @@
           <div class="content">
             <h3>flammerkueches</h3>
             <p>lorem ipsum</p>
-            <span>$15</span>
+            <span>Tart-Flamm $7.25</span><span class="more">/Flamm $16.95</span>
           </div>
         </a>
 
