@@ -274,6 +274,21 @@
         line-height: 1.8;
       }
 
+      /*  Reserve section */
+      .reserve {
+        background-color: #fff;
+        background-position: center;
+        background-size: cover;
+      }
+
+      .reserve form {
+        margin: 0 auto 2rem auto;
+        max-width: 60rem;
+        border-radius: var(--border-radius-hover);
+        padding: 3rem;
+        border: var(--border);
+      }
+
       /* Navbar header section */
       header {
         position: fixed;
@@ -594,7 +609,8 @@
 
     <!-- Reserve section -->
     <section id="reserve" class="reserve">
-      <h1 class="heading">Bookings
+      <h1 class="heading">
+        Bookings
         <span>Reserve a table</span>
       </h1>
       <form action="">
@@ -602,7 +618,13 @@
         <input type="email" placeholder="Email" class="box" />
         <input type="number" placeholder="Number" class="box" />
 
-        <textarea name="" placeholder="Write your message" cols="30" rows="10" class="box"></textarea>
+        <textarea
+          name=""
+          placeholder="Write your message"
+          cols="30"
+          rows="10"
+          class="box"
+        ></textarea>
         <input type="submit" value="Reserve a table" class="btn" />
       </form>
     </section>
