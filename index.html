@@ -310,6 +310,47 @@
         resize: none;
       }
 
+      /* Footer section */
+      .footer .box-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+        gap: 1.5rem;
+      }
+
+      .footer .box-container .box h3 {
+        font-size: 2.5rem;
+        color: var(--bluegrey);
+        padding: 1rem 0;
+      }
+
+      .footer .box-container .box a {
+        display: block;
+        font-size: 1.5rem;
+        color: var(--bluegrey);
+        padding: 1rem 0;
+      }
+
+      .footer .box-container .box a i {
+        padding-right: 0.5rem;
+      }
+
+      .footer .box-container .box a:hover i {
+        padding-right: 2rem;
+      }
+
+      .footer .credit {
+        text-align: center;
+        margin-top: 1rem;
+        padding: 2rem 1rem;
+        font-size: 2rem;
+        color: var(--bluegrey);
+      }
+
+      .footer .credit span {
+        color: var(--bluegrey);
+        border-bottom: var(--border-hover);
+      }
+
       /* Navbar header section */
       header {
         position: fixed;
@@ -655,32 +696,46 @@
       <div class="box-container">
         <div class="box">
           <h3>our branches</h3>
-          <a href="#" class="fas fa-arrow-right">Saint-Denis</a>
-          <a href="#" class="fas fa-arrow-right">McGill/Sainte-Catherine</a>
-          <a href="#" class="fas fa-arrow-right">Saint-Paul</a>
-          <a href="#" class="fas fa-arrow-right">Crescent/Sainte-Catherine</a>
-          <a href="#" class="fas fa-arrow-right">Anjou</a>
-          <a href="#" class="fas fa-arrow-right">Dix-30</a>
+          <a href="#"><i class="fas fa-arrow-right"></i>Saint-Denis</a>
+          <a href="#"
+            ><i class="fas fa-arrow-right"></i>McGill/Sainte-Catherine</a
+          >
+          <a href="#"><i class="fas fa-arrow-right"></i>Saint-Paul</a>
+          <a href="#"
+            ><i class="fas fa-arrow-right"></i>Crescent/Sainte-Catherine</a
+          >
+          <a href="#"> <i class="fas fa-arrow-right"></i>Anjou</a>
+          <a href="#"><i class="fas fa-arrow-right"></i>Dix-30</a>
         </div>
 
         <div class="box">
           <h3>quick links</h3>
-          <a href="#" class="fas fa-arrow-right">Home</a>
-          <a href="#" class="fas fa-arrow-right">About</a>
-          <a href="#" class="fas fa-arrow-right">Menu</a>
-          <a href="#" class="fas fa-arrow-right">Reserve</a>
-          <a href="#" class="fas fa-arrow-right">Contact</a>
+          <a href="#"><i class="fa-solid fa-link"></i>Home</a>
+          <a href="#"><i class="fa-solid fa-link"></i>About</a>
+          <a href="#"><i class="fa-solid fa-link"></i>Menu</a>
+          <a href="#"><i class="fa-solid fa-link"></i>Reservations</a>
+          <a href="#"><i class="fa-solid fa-link"></i>Contact</a>
         </div>
 
         <div class="box">
           <h3>contact info</h3>
-          <a href="#" class="fas fa-arrow-phone">+514-845-1660</a>
-          <a href="#" class="fas fa-arrow-phone">+514-788-6333</a>
-          <a href="#" class="fas fa-arrow-phone">+514-788-6100</a>
-          <a href="#" class="fas fa-arrow-phone">+514-788-9788</a>
-          <a href="#" class="fas fa-arrow-phone">+514-351-5591</a>
-          <a href="#" class="fas fa-arrow-phone">+450-676-7215</a>
+          <a href="#"><i class="fa-solid fa-phone"></i>+514-845-1660</a>
+          <a href="#"><i class="fa-solid fa-phone"></i>+514-788-6333</a>
+          <a href="#"><i class="fa-solid fa-phone"></i>+514-788-6100</a>
+          <a href="#"><i class="fa-solid fa-phone"></i>+514-788-9788</a>
+          <a href="#"><i class="fa-solid fa-phone"></i>+514-351-5591</a>
+          <a href="#"><i class="fa-solid fa-phone"></i>+450-676-7215</a>
         </div>
+
+        <div class="box">
+          <h3>socials</h3>
+          <a href="#"><i class="fa-brands fa-facebook"></i>Facebook</a>
+          <a href="#"><i class="fa-brands fa-instagram"></i>Instagram</a>
+        </div>
+      </div>
+
+      <div class="credit">
+        created by <span>Shaniesha John</span> | all rights reserved!
       </div>
     </section>
   </body>
