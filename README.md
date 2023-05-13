@@ -10,12 +10,13 @@ From what I learned from buliding this landing page is that learning the differe
 
 | Color       | Hex                                                              |
 | ----------- | ---------------------------------------------------------------- |
-| Dark Green  | ![#006400](https://via.placeholder.com/10/0a192f?text=+) #006400 |
-| Blue Grey   | ![#424952](https://via.placeholder.com/10/f8f8f8?text=+) #424952 |
-| Maple Red   | ![#d02d23](https://via.placeholder.com/10/00b48a?text=+) #d02d23 |
-| Maple Beige | ![#fad0a1](https://via.placeholder.com/10/00b48a?text=+) #fad0a1 |
+| Dark Green  | ![#006400](https://via.placeholder.com/10/006400?text=+) #006400 |
+| Blue Grey   | ![#424952](https://via.placeholder.com/10/424952?text=+) #424952 |
+| Maple Red   | ![#d02d23](https://via.placeholder.com/10/d02d23?text=+) #d02d23 |
+| Maple Beige | ![#fad0a1](https://via.placeholder.com/10/fad0a1?text=+) #fad0a1 |
 
-#Appendix
+# Appendix
+
 Images were used by Google, FreePik.
 Information used was from [3 Brewers (3 Brasseurs)](https://www.les3brasseurs.ca/en/) directly.
 Colors used were from [color-name] (https://www.color-name.com/)
